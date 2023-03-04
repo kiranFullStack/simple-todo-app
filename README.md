@@ -1,4 +1,4 @@
-React Todo App
+## React Todo App
 This is a simple React Todo App with add, delete and complete functionality.
 
 Getting Started
