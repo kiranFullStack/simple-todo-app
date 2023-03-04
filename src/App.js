@@ -1,6 +1,5 @@
 import './App.css'
 import { useState } from 'react'
-import { Component } from './Component'
 
 function App() {
   const [name, setname] = useState('first')
