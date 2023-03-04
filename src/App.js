@@ -1,18 +1,55 @@
-import './App.css'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 function App() {
-  const [name, setname] = useState('first')
+  const [todos, setTodos] = useState([])
+  const [todoInput, setTodoInput] = useState('')
+
+  // 👉🏼👉🏼👉🏼 1. handle input
+
+  const handleTodoInputChange = (e) => {
+    setTodoInput(e.target.value)
+  }
+
+  // 👉🏼👉🏼👉🏼 2. Add to todos array
+
+  const handleAddTodo = () => {
+    setTodos([...todos, { id: Date.now(), text: todoInput }])
+    setTodoInput('')
+  }
+
+  // 👉🏼👉🏼👉🏼 3. DELETE todos array / Search todos array
+
+  const handleDeleteTodo = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id))
+    // Opposite of delete= search
+    // setTodos(todos.filter((todo) => todo.id === id))
+  }
+
+  // 👉🏼👉🏼👉🏼 4. Add on ENTER pressed
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleAddTodo()
+    }
+  }
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1>{name}</h1>
-        <button onClick={() => setname('second')}>Click</button>
-
-        <h1>{`Hello=  ${200 + 800}`}</h1>
-        <h1>Hello {name}</h1>
-      </header>
+    <div>
+      <input
+        type='text'
+        value={todoInput}
+        onChange={handleTodoInputChange}
+        onKeyDown={handleKeyDown}
+      />
+      <button onClick={handleAddTodo}>Add</button>
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            {todo.text}
+            <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
