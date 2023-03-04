@@ -1,22 +1,22 @@
 ## React Todo App
 This is a simple React Todo App with add, delete and complete functionality.
 
-Getting Started
+# Getting Started
 Clone the repository:
-
-git clone https://github.com/<your-username>/react-todo-app.git
-Navigate to the project directory:
-
+`git clone https://github.com/<your-username>/react-todo-app.git`
+  
+# Navigate to the project directory:
 `cd react-todo-app`
-Install the dependencies:
 
-npm install
-Start the development server:
+# Install the dependencies:
+`npm install`
 
-npm start
+# Start the development server:
+`npm start`
+
 Open the app in your browser by visiting http://localhost:3000.
 
-Functionality
+##Functionality
 Add Todo: Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
 
 Delete Todo: Click the "Delete" button to remove a todo from the list.
