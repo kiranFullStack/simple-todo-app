@@ -26,7 +26,7 @@ Open the app in your browser by visiting http://localhost:3000.
 
 ## Functionality
 
-Add Todo: Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
+**Add Todo:** Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
 
 **Delete Todo:** Click the "Delete" button to remove a todo from the list.
 
