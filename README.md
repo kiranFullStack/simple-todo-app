@@ -3,6 +3,7 @@ This is a simple React Todo App with add, delete and complete functionality.
 
 # Getting Started
 Clone the repository:
+
 `git clone https://github.com/<your-username>/react-todo-app.git`
   
 # Navigate to the project directory:
