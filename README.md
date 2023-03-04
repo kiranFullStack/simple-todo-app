@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+React Todo App
+This is a simple React Todo App with add, delete and complete functionality.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Getting Started
+Clone the repository:
 
-## Available Scripts
+git clone https://github.com/<your-username>/react-todo-app.git
+Navigate to the project directory:
 
-In the project directory, you can run:
+cd react-todo-app
+Install the dependencies:
 
-### `npm start`
+npm install
+Start the development server:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm start
+Open the app in your browser by visiting http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Functionality
+Add Todo: Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
 
-### `npm test`
+Delete Todo: Click the "Delete" button to remove a todo from the list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Complete Todo: Click the checkbox next to a todo to mark it as completed. The completed todos will have a line through them.
 
-### `npm run build`
+Code Explanation
+handleTodoInputChange: This function handles the input change event and updates the todoInput state accordingly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+handleAddTodo: This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+handleDeleteTodo: This function removes a todo from the todos state by filtering out the todo with the given id.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+handleKeyDown: This function is triggered when the "Enter" key is pressed while typing in a new todo. It calls the handleAddTodo function to add the new todo to the list.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+handleToggleComplete: This function toggles the completed property of a todo with the given id. It uses the map function to create a new array of todos with the completed todo updated accordingly.
