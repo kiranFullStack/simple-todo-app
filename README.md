@@ -1,36 +1,43 @@
 ## React Todo App
+
 This is a simple React Todo App with add, delete and complete functionality.
 
 # Getting Started
+
 Clone the repository:
 
 `git clone https://github.com/<your-username>/react-todo-app.git`
-  
+
 # Navigate to the project directory:
+
 `cd react-todo-app`
 
 # Install the dependencies:
+
 `npm install`
 
 # Start the development server:
+
 `npm start`
 
 Open the app in your browser by visiting http://localhost:3000.
 
 ## Functionality
+
 Add Todo: Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
 
-*Delete Todo:* Click the "Delete" button to remove a todo from the list.
+_Delete Todo:_ Click the "Delete" button to remove a todo from the list.
 
-Complete Todo: Click the checkbox next to a todo to mark it as completed. The completed todos will have a line through them.
+_Complete Todo:_ Click the checkbox next to a todo to mark it as completed. The completed todos will have a line through them.
 
-Code Explanation
-handleTodoInputChange: This function handles the input change event and updates the todoInput state accordingly.
+# Code Explanation
 
-handleAddTodo: This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
+_handleTodoInputChange:_ This function handles the input change event and updates the todoInput state accordingly.
 
-handleDeleteTodo: This function removes a todo from the todos state by filtering out the todo with the given id.
+_handleAddTodo:_ This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
 
-handleKeyDown: This function is triggered when the "Enter" key is pressed while typing in a new todo. It calls the handleAddTodo function to add the new todo to the list.
+_handleDeleteTodo:_ This function removes a todo from the todos state by filtering out the todo with the given id.
 
-handleToggleComplete: This function toggles the completed property of a todo with the given id. It uses the map function to create a new array of todos with the completed todo updated accordingly.
+_handleKeyDown:_ This function is triggered when the "Enter" key is pressed while typing in a new todo. It calls the handleAddTodo function to add the new todo to the list.
+
+_handleToggleComplete:_ This function toggles the completed property of a todo with the given id. It uses the map function to create a new array of todos with the completed todo updated accordingly.
