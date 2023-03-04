@@ -13,7 +13,7 @@ function App() {
   // 👉🏼👉🏼👉🏼 2. Add to todos array
 
   const handleAddTodo = () => {
-    setTodos([...todos, { id: Date.now(), text: todoInput }])
+    setTodos([...todos, { id: Date.now(), text: todoInput, completed: false }])
     setTodoInput('')
   }
 
@@ -33,6 +33,36 @@ function App() {
     }
   }
 
+  // 👉🏼👉🏼👉🏼 5. Toggle completed todo
+
+  const handleToggleComplete = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id
+          ? {
+              ...todo,
+              completed: !todo.completed,
+            }
+          : todo
+      )
+    )
+  }
+
+  // Simpler explanation using if else
+  // const handleToggleComplete = (id) => {
+  //   setTodos(
+  //     todos.map((todo) => {
+  //       if (todo.id === id) {
+  //         return {
+  //           ...todo,
+  //           completed: !todo.completed,
+  //         }
+  //       }
+  //       return todo
+  //     })
+  //   )
+  // }
+
   return (
     <div>
       <input
@@ -44,7 +74,14 @@ function App() {
       <button onClick={handleAddTodo}>Add</button>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li
+            key={todo.id}
+            style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+            <input
+              type='checkbox'
+              checked={todo.completed}
+              onChange={() => handleToggleComplete(todo.id)}
+            />
             {todo.text}
             <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
           </li>
