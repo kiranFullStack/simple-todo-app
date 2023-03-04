@@ -28,18 +28,18 @@ Open the app in your browser by visiting http://localhost:3000.
 
 Add Todo: Type in a todo and press the "Add" button or the "Enter" key to add it to the list.
 
-_Delete Todo:_ Click the "Delete" button to remove a todo from the list.
+**Delete Todo:** Click the "Delete" button to remove a todo from the list.
 
-_Complete Todo:_ Click the checkbox next to a todo to mark it as completed. The completed todos will have a line through them.
+**Complete Todo:** Click the checkbox next to a todo to mark it as completed. The completed todos will have a line through them.
 
 # Code Explanation
 
-_handleTodoInputChange:_ This function handles the input change event and updates the todoInput state accordingly.
+**handleTodoInputChange:** This function handles the input change event and updates the todoInput state accordingly.
 
-_handleAddTodo:_ This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
+**handleAddTodo:** This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
 
-_handleDeleteTodo:_ This function removes a todo from the todos state by filtering out the todo with the given id.
+**handleDeleteTodo:** This function removes a todo from the todos state by filtering out the todo with the given id.
 
-_handleKeyDown:_ This function is triggered when the "Enter" key is pressed while typing in a new todo. It calls the handleAddTodo function to add the new todo to the list.
+**handleKeyDown:** This function is triggered when the "Enter" key is pressed while typing in a new todo. It calls the handleAddTodo function to add the new todo to the list.
 
-_handleToggleComplete:_ This function toggles the completed property of a todo with the given id. It uses the map function to create a new array of todos with the completed todo updated accordingly.
+**handleToggleComplete:** This function toggles the completed property of a todo with the given id. It uses the map function to create a new array of todos with the completed todo updated accordingly.
