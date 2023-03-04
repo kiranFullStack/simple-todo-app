@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.heading-style {
+  color: red;
+}
+
+.heading-3 {
+  color: green;
+  border: 200px solid red;
+  padding: 10px;
+  margin: 1000px;
+}
