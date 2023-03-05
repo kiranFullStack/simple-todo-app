@@ -8,11 +8,11 @@ This is a simple React Todo App with add, delete and complete functionality.
 
 Clone the repository:
 
-`git clone https://github.com/<your-username>/react-todo-app.git`
+`git clone https://github.com/kiranFullStack/simple-todo-app.git`
 
 # Navigate to the project directory:
 
-`cd react-todo-app`
+`cd simple-todo-app`
 
 # Install the dependencies:
 
