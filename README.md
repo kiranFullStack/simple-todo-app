@@ -35,6 +35,7 @@ Open the app in your browser by visiting http://localhost:3000.
 # Code Explanation
 
 **handleTodoInputChange:** This function handles the input change event and updates the todoInput state accordingly.
+<img width="518" alt="Screenshot 2023-03-05 at 1 35 21 PM" src="https://user-images.githubusercontent.com/40055761/222949164-9764776a-96af-4ed2-888f-1b98ad65246b.png">
 
 **handleAddTodo:** This function adds a new todo to the todos state by spreading the existing todos and adding a new todo object with a unique id, text, and completed set to false.
 
