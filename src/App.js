@@ -91,6 +91,18 @@ function App() {
           <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
         </div>
       ))}
+      <div>
+        <p>&copy; 2023 Kiran</p>
+        <a
+          href='https://github.com/kiranFullStack/music-store-app-with-search'
+          target='_blank'
+          rel='noreferrer'>
+          ⭐️⭐️⭐️CODE👨🏽‍💻⭐️⭐️⭐️
+        </a>
+        <br />
+        <br />
+        <br />
+      </div>
     </div>
   )
 }
