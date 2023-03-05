@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -64,29 +65,32 @@ function App() {
   // }
 
   return (
-    <div>
-      <input
-        type='text'
-        value={todoInput}
-        onChange={handleTodoInputChange}
-        onKeyDown={handleKeyDown}
-      />
-      <button onClick={handleAddTodo}>Add</button>
-      <ul>
-        {todos.map((todo) => (
-          <li
-            key={todo.id}
-            style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>
+    <div className='container'>
+      <div className='input-container'>
+        <input
+          type='text'
+          value={todoInput}
+          onChange={handleTodoInputChange}
+          onKeyDown={handleKeyDown}
+        />
+        <button onClick={handleAddTodo}>Add</button>
+      </div>
+
+      {todos.map((todo) => (
+        <div
+          className='set-straignt'
+          key={todo.id}>
+          <li className={todo.completed ? 'completed' : ''}>
             <input
               type='checkbox'
               checked={todo.completed}
               onChange={() => handleToggleComplete(todo.id)}
             />
             {todo.text}
-            <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
           </li>
-        ))}
-      </ul>
+          <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
+        </div>
+      ))}
     </div>
   )
 }
