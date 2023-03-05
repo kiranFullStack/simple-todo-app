@@ -1,26 +1,26 @@
-## React Todo App
+# React Todo App
 
 This is a simple React Todo App with add, delete and complete functionality.
 
 ## ⭐️⭐️⭐️ Link = [https://endearing-cascaron-b352db.netlify.app/](https://endearing-cascaron-b352db.netlify.app/)
 
-# Getting Started
+## Getting Started
 
 Clone the repository:
 
-`git clone https://github.com/kiranFullStack/simple-todo-app.git`
+### `git clone https://github.com/kiranFullStack/simple-todo-app.git`
 
 # Navigate to the project directory:
 
-`cd simple-todo-app`
+### `cd simple-todo-app`
 
 # Install the dependencies:
 
-`npm install`
+### `npm install`
 
 # Start the development server:
 
-`npm start`
+### `npm start`
 
 Open the app in your browser by visiting http://localhost:3000.
 
