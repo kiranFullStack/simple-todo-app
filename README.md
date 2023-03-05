@@ -12,7 +12,7 @@ Clone the repository:
 
 # Navigate to the project directory:
 
-`cd simple-todo-app`
+```cd simple-todo-app```
 
 # Install the dependencies:
 
